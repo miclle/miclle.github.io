@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JavaScript-Object-Prototypes"
+title:  "JavaScript Object Prototypes"
 date:   2014-09-01 00:00:00
 categories: [JavaScript]
 tags: [JavaScript, Object, Prototype]
