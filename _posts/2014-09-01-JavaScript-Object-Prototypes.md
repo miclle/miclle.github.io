@@ -11,18 +11,24 @@ tags: [JavaScript, Object, Prototype]
 一般的做法，比如这样： "Hello World".split('').join(' '); 先将字符串切割成数组，然后再用空格连接。
 
 为了实现通用，也许我们要定义为一个函数：
+
+
 ```js
 function spacify(str){
   return str.split('').join(' ');
 }
 ```
 
+
 如果我们希望这个函数直接可以更简单一点使用，这样用 "Hello World".spacify() ，那我们需要将这个方法放到 String 对象上，如：
+
+
 ```js
 String.prototype.spacify = function(){
   return this.split('').join(' ');
 }
 ```
+
 
 prototype 表示 Object 的原型对象，在 JavaString 中所有对象都由 Object 继承而来，通过 probotype 可以给对象增加方法和属性。
 
