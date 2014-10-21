@@ -76,3 +76,10 @@ requestAnimationFrame() 通常被调用的频率是每秒60次, 不仅仅可以�
 ###setImmediate()
 该方法最近刚刚被微软提出, 可能不会被w3c批准成为标准, 目前只有 Internet Explorer 10实现了该方法.
 setImmediate大约0.16ms执行一次，fps超过6000。
+
+
+参考链接
+https://developer.mozilla.org/zh-CN/docs/DOM/window.setTimeout
+https://developer.mozilla.org/zh-CN/docs/Web/API/Window.setInterval
+https://developer.mozilla.org/zh-CN/docs/Web/API/window.requestAnimationFrame
+https://developer.mozilla.org/zh-CN/docs/Web/API/window.setImmediate
