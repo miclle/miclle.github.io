@@ -12,7 +12,7 @@ http header 消息通常被分为4个部分：general  header, request header, r
 
 ## Requests 部分
 
-<table class="bordered">
+<table class="table table-bordered">
   <tbody>
     <tr>
       <th>Header</th><th>解释</th><th>示例</th>
