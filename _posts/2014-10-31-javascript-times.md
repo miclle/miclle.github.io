@@ -7,7 +7,7 @@ tags: [JavaScript, ruby, times]
 ---
 
 
-##JavaScript
+## JavaScript
 
 ```
 Number.prototype.times = function(fn) {
@@ -15,7 +15,7 @@ Number.prototype.times = function(fn) {
   while(times && times > 0){
   	fn();
   	times--;
-  }  
+  }
 };
 
 5..times(function(){
@@ -24,13 +24,13 @@ Number.prototype.times = function(fn) {
 ```
 
 
-##CoffeeScript
+## CoffeeScript
 
 ```
 Number::times = (fn) ->
   do fn for [1..@valueOf()] if @valueOf()
   return
-  
+
 5.times -> console.log 'Hello World!'
 ```
 

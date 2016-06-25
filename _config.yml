@@ -16,13 +16,11 @@ twitter_username: miclle
 github_username:  miclle
 
 # Build settings
-# markdown: kramdown
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
 
 permalink: /:title/
 
-gems: [jekyll-paginate, redcarpet, pygments]
+gems: [jekyll-paginate]
 
 paginate: 10
 
