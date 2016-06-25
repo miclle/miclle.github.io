@@ -6,21 +6,21 @@ categories: []
 tags: [JavaScript, setTimeout, setInterval, requestAnimationFrame, setImmediate]
 ---
 
-#JavaScript 定时器
+# JavaScript 定时器
 
 在 JavaScript 中说到定时器，最常用的就两个： `setTimeout()` 和 `setInterval()` 这两个函数，它们的内部运行机制完全一样，区别在于 `setTimeout` 指定的代码是一次性执行，`setInterval` 则为反复执行。
 
-##setTimeout()
-###语法
+## setTimeout()
+### 语法
 ```
 var timerID = window.setTimeout(func/code, delay);
 ```
  * timerID 是该延时操作的数字ID, 此ID随后可以用来作为clearTimeout方法的参数.
  * func 是你想要在delay毫秒之后执行的函数，code 在第二种语法,是指你想要在delay毫秒之后执行的代码 (使用该语法是不推荐的, 不推荐的原因和eval()一样)
  * delay 是延迟的毫秒数 (一秒等于1000毫秒),函数的调用会在该延迟之后发生.但是实际的延迟时间可能会稍长一点.
- 
 
-###例子
+
+### 例子
 ```
 function test(text) {
 	console.log("print: " + text);
@@ -70,15 +70,15 @@ setInterval(function(){
 requestAnimationFrame()
 ```
 
-###requestAnimationFrame() 
+### requestAnimationFrame()
 requestAnimationFrame() 通常被调用的频率是每秒60次, 不仅仅可以解决中断调度的问题，还可以更加优化得统一管理动画单元里dom元素的repaint方式, 效果要好于setTimeout(), 但是 IE10 以下浏览器还不支持。
 
-###setImmediate()
+### setImmediate()
 该方法最近刚刚被微软提出, 可能不会被w3c批准成为标准, 目前只有 Internet Explorer 10实现了该方法.
 setImmediate大约0.16ms执行一次，fps超过6000。
 
 
-#####参考链接
+##### 参考链接
 https://developer.mozilla.org/zh-CN/docs/DOM/window.setTimeout
 
 https://developer.mozilla.org/zh-CN/docs/Web/API/Window.setInterval

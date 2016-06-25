@@ -10,7 +10,7 @@ HTTP（HyperTextTransferProtocol）即超文本传输协议，目前网页传输
 
 http header 消息通常被分为4个部分：general  header, request header, response header, entity header。根据维基百科对http header内容的组织形式，大体分为Request和Response两部分。
 
-##Requests部分
+## Requests 部分
 
 <table class="bordered">
   <tbody>
