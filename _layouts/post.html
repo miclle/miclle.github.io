@@ -1,37 +1,22 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1>{{ page.title }}</h1>
-    <p class="meta">
-      {{ page.date | date: "%b %-d, %Y" }}
-      {% if page.author %} • {{ page.author }}{% endif %}
-      {% if page.meta %} • {{ page.meta }}{% endif %}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-      {% if page.categories %}
-      Category:
-      <span class="category">
-        {% for category in page.categories %}
-          <span>• {{ category }}</span>
-        {% endfor %}
-      </span>
-      {% endif %}
-    </p>
-  </header>
+  <div class="post-meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
 
-  <article class="post-content">
-  {{ content }}
-  </article>
+    {% if page.author %}
+      • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">{{ page.author }}</span></span>
+    {% endif %}
+  </div>
 
-  {% if page.tags %}
-  <p class="tags">
-    Tags:
-    {% for tag in page.tags %}
-      <span>• {{ tag }}</span>
-    {% endfor %}
-  </p>
-  {% endif %}
+  <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
 
-</div>
+  <div class="content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>

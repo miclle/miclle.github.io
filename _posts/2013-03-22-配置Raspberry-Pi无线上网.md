@@ -2,7 +2,10 @@
 layout: post
 title:  "配置Raspberry Pi无线上网"
 date:   2013-03-22 12:12:04
+categories: [Raspberry]
+tags: [Raspberry]
 ---
+
 
 入手Raspberry Pi有几天了，一直插根网络连到MAC上通过共享网络来连接网络，不是很方便。
 
