@@ -24,4 +24,4 @@ gems: [jekyll-paginate]
 
 paginate: 10
 
-paginate_path: "/posts/page:num/"
+paginate_path: "/pages/:num/"
